@@ -11,7 +11,8 @@ object ApplicationBuild extends Build {
     // Add your project dependencies here,
     javaCore,
     javaJdbc,
-    javaEbean
+    javaEbean,
+    "com.google.guava" % "guava" % "13.0.1"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
